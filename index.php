@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infotech | Contact Us</title>
+    <title>Infotech</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
@@ -14,7 +14,7 @@
 <body>
     <div class="header sticky-top">
         <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <i>Infotech</i>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
@@ -38,44 +38,42 @@
             </div>
         </nav>
     </div>
-    
     <div id="loading">
     </div>
 
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb py-2">
-            <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-                Contact us
-            </li>
-        </ol>
-    </nav>
-
     <div class="page-container">
-        <h2 style="text-align: center;">Contact Us</h2>
-        <p>
-            Thank you for your interest in Profive Infotech and our Services. Please fill out the form below or e-mail us at info@profiveinfotech.com and we will get back to you promptly regarding your request.
+        <h1 style="text-align: center;">Welcome to Profive Infotech</h1>
+        <div id="property-images" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#property-images" data-slide-to="0" class="active"></li>
+                <li data-target="#property-images" data-slide-to="1" class=""></li>
+                <li data-target="#property-images" data-slide-to="2" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/1.jpg" alt="slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/team.jpg" alt="slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/2.jpg" alt="slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#property-images" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#property-images" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><br/>
+
+        <p>A team of technical expertise, who knows how to help you craft modern, traditional, best suitable solutions in different verticals of business.	
+            Driven by Expertise & Excellence:
+            We aren’t a team of coders! We deliver comprehensive and insightful business solutions exactly as per client requirement
         </p>
-
-        <form method="post">
-            Email:
-            <input type="email" name="email" placeholder="email"><br/>
-            Message:<br/>
-            <textarea cols="50" rows="10" placeholder="Type your Issue.."></textarea><br/>
-            <button type="submit" value="submit">submit</button>
-        </form>
-
-        <p>
-            ADDRESS:<br/>
-            No. 32, Chhabria Icon, 2nd Floor, 1st Main Road, Vasanthnagar, Bengaluru-560001, Karnataka, India<br/>
-
-            PHONE NUMBER<br/>
-            +91 80 4155 7113
-
-        </p>
-            
     </div>    
     
     <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-heading" aria-hidden="true">
@@ -207,24 +205,8 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="page-container footer-container">
-            <div class="footer-texts">
-                <div class="footer-text">
-                    <a href="about_us.html">About Us</a>
-                </div>
-                <div class="footer-text">
-                    <a href="contact_us.html">Contact Us</a>
-                </div>
-                <div class="footer-text">
-                    <a href="team.html">Team</a>
-                </div>
-            </div>
-            <div class="footer-copyright">© 2022 Copyright Infotech </div>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <?php
+    include "includes/footer.php";
+    ?>
 </body>
 </html>

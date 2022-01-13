@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infotech | Team</title>
+    <title>Infotech | About us</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
@@ -14,7 +14,7 @@
 <body>
     <div class="header sticky-top">
         <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <i>Infotech</i>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
@@ -45,20 +45,21 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb py-2">
             <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-                team
+                about us
             </li>
         </ol>
     </nav>
 
     <div class="page-container">
-        <h2 style="text-align: center;">Team</h2>
-        <img id="infotech" src="img/contact us.jpg" alt="team pic"/><br/><br/>
+        <h2 style="text-align: center;">About Us</h2>
+        <img id="infotech" src="img/3.jpg" alt="about us pic"/><br/><br/>
         <p>
-            At Profive Infotech, our primary asset is our team of talented, enthusiastic and committed individuals from
-             different walks of life – software development, sales and marketing, education and training to the technical sciences.
+            A team of technical expertise, who knows how to help you craft modern, traditional, best suitable solutions in different verticals of business. 
+            We can guide you through decisions, which will meet your business requirements and ideas. Our expertise is into Web designing, Software Development, Business Integration Tools, Mobile Applications, IT Infra Management, Domain Hosting and IT Recruitment.
+
         </p>
             
     </div>    
@@ -192,24 +193,8 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="page-container footer-container">
-            <div class="footer-texts">
-                <div class="footer-text">
-                    <a href="about_us.html">About Us</a>
-                </div>
-                <div class="footer-text">
-                    <a href="contact_us.html">Contact Us</a>
-                </div>
-                <div class="footer-text">
-                    <a href="team.html">Team</a>
-                </div>
-            </div>
-            <div class="footer-copyright">© 2022 Copyright Infotech </div>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <?php
+    include "includes/footer.php";
+    ?>
 </body>
 </html>
