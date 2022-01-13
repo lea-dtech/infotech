@@ -61,7 +61,7 @@
 
         <form method="post">
             Email:
-            <input type="email" name="email" placeholder="email"><br/>
+            <input type="email" name="email" placeholder="email" required><br/>
             Message:<br/>
             <textarea cols="50" rows="10" placeholder="Type your Issue.."></textarea><br/>
             <button type="submit" value="submit">submit</button>
